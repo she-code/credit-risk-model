@@ -69,6 +69,10 @@ Understood credit risk
 
 Conducted exploratory data analysis on 95,662 transactions. Checked data types and confirmed no missing values. Analyzed numerical and categorical features, identified outliers and skewed distributions, and explored correlations—especially between `Amount` and `Value`. Findings will guide feature engineering and modeling.
 
+### ✅ Task 3 - Feature Engineering
+
+Built a reproducible data pipeline using sklearn.pipeline.Pipeline. Created aggregate and time-based features, encoded categorical variables, handled missing values, and scaled numerical data. All transformations were implemented in modular scripts under the src/ directory.
+
 ---
 
 ## ⚙️ Setup Instructions
