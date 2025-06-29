@@ -37,7 +37,12 @@ credit-risk-model/
 │ └── README.md # Documentation for scripts
 ├── src/
 │ └── utils/ # Utility functions
-  │ └── data_loader.py # loads csv files
+│  │ └── data_loader.py # loads csv files
+│ └── config.py # contains constants
+│ └── features.py # features selection
+│ └── preprocessing.py # data preprocessing
+│ └── pipeline.py # pipeline for feature engineering and preprocessing
+│ └── run_pipeline.py # runs the pipeline and saves the output
 │ └── README.md # Documentation for source code
 ├── tests/
 │ └── README.md # Testing documentation
