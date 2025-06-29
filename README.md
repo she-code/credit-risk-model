@@ -31,11 +31,13 @@ credit-risk-model/
 │ ├── raw/ # Raw data (should never be modified)
 │ └── processed/ # Processed/cleaned data (gitignored)
 ├── notebooks/
+  │ └── 1.0_eda.ipynb # performs eda and statistics analysis on data
 │ └── README.md # Documentation for notebooks
 ├── scripts/
 │ └── README.md # Documentation for scripts
 ├── src/
 │ └── utils/ # Utility functions
+  │ └── data_loader.py # loads csv files
 │ └── README.md # Documentation for source code
 ├── tests/
 │ └── README.md # Testing documentation
@@ -54,6 +56,14 @@ credit-risk-model/
 - Matplotlib, Seaborn (visualization)  
 - Jupyter Notebook  
 - Git  
+
+---
+
+## Key Task Completed 
+
+### ✅ Task 1: Data Ingestion & Preprocessing
+
+Conducted exploratory data analysis on 95,662 transactions. Checked data types and confirmed no missing values. Analyzed numerical and categorical features, identified outliers and skewed distributions, and explored correlations—especially between `Amount` and `Value`. Findings will guide feature engineering and modeling.
 
 ---
 
