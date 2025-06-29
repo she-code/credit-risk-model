@@ -61,7 +61,11 @@ credit-risk-model/
 
 ## Key Task Completed 
 
-### ✅ Task 1: nderstanding Credit Risk
+### ✅ Task 1 - Understanding Credit Risk 
+
+Understood credit risk
+
+### ✅ Task 2 - Exploratory Data Analysis (EDA) 
 
 Conducted exploratory data analysis on 95,662 transactions. Checked data types and confirmed no missing values. Analyzed numerical and categorical features, identified outliers and skewed distributions, and explored correlations—especially between `Amount` and `Value`. Findings will guide feature engineering and modeling.
 
