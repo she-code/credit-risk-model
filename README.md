@@ -1,6 +1,7 @@
 # Credit Risk model
 
 ## Project Overview
+
 This project aims to build a smart credit scoring engine for Bati Bank’s Buy-Now-Pay-Later (BNPL) service by transforming raw eCommerce behavioral data into predictive insights. Using customer Recency, Frequency, and Monetary (RFM) patterns, we engineer a proxy for credit default risk in the absence of traditional credit history. The model outputs a risk probability score aligned with Basel II regulatory standards, enabling Bati Bank to make data-driven lending decisions, promote financial inclusion, and expand responsible credit access in Ethiopia’s digital commerce ecosystem.
 ---
 
