@@ -61,7 +61,7 @@ credit-risk-model/
 
 ## Key Task Completed 
 
-### ✅ Task 1: Data Ingestion & Preprocessing
+### ✅ Task 1: nderstanding Credit Risk
 
 Conducted exploratory data analysis on 95,662 transactions. Checked data types and confirmed no missing values. Analyzed numerical and categorical features, identified outliers and skewed distributions, and explored correlations—especially between `Amount` and `Value`. Findings will guide feature engineering and modeling.
 
