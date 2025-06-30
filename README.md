@@ -32,6 +32,7 @@ credit-risk-model/
 │ └── processed/ # Processed/cleaned data (gitignored)
 ├── notebooks/
   │ └── 1.0_eda.ipynb # performs eda and statistics analysis on data
+  │ └── 04_RFM_Target_Variable_Engineering.ipynb # rfm calculation
 │ └── README.md # Documentation for notebooks
 ├── scripts/
 │ └── README.md # Documentation for scripts
@@ -77,6 +78,9 @@ Conducted exploratory data analysis on 95,662 transactions. Checked data types a
 ### ✅ Task 3 - Feature Engineering
 
 Built a reproducible data pipeline using sklearn.pipeline.Pipeline. Created aggregate and time-based features, encoded categorical variables, handled missing values, and scaled numerical data. All transformations were implemented in modular scripts under the src/ directory.
+
+### ✅ Task 4 - Proxy Target Variable Engineering
+Engineered a proxy target variable is_high_risk using RFM-based customer segmentation. Calculated Recency, Frequency, and Monetary metrics per customer, scaled features, and applied K-Means clustering to identify disengaged customers. Labeled the least engaged cluster as high-risk (1) and others as low-risk (0). Integrated the binary target into the processed dataset for downstream modeling.
 
 ---
 
