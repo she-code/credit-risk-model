@@ -40,6 +40,10 @@ credit-risk-model/
 ├── src/
 │ └── utils/ # Utility functions
 │  │ └── data_loader.py # loads csv files
+│ └── api/ # api functions
+│  │ └── main.py # registers api
+│  │ └── pydantic_models.py # model
+│  │ └── test_model.py # tests the registered model existance
 │ └── config.py # contains constants
 │ └── features.py # features selection
 │ └── preprocessing.py # data preprocessing
@@ -88,6 +92,9 @@ Engineered a proxy target variable is_high_risk using RFM-based customer segment
 
 ### ✅ Task 5 - Model Training and Tracking
 Built a structured model training pipeline using MLflow for experiment tracking and model versioning. Split the processed dataset with the is_high_risk target into stratified train/test sets and scaled features using StandardScaler. Trained Logistic Regression, Random Forest, and Gradient Boosting models with hyperparameter tuning via GridSearchCV. Evaluated models using Accuracy, Precision, Recall, F1 Score, and ROC-AUC. Logged parameters, metrics, and models to MLflow and registered the best-performing model in the MLflow Model Registry for future use.
+
+### ✅ Task 6 - Model Deployment and Continuous Integration
+Deployed the trained credit risk model as a RESTful API using FastAPI. Loaded the best model from the MLflow Model Registry and exposed a /predict endpoint for real-time risk scoring. Defined input/output schemas using Pydantic for request validation and structured responses. Containerized the service using Docker and provided a docker-compose.yml for simplified local deployment. Configured a GitHub Actions CI pipeline to run code quality checks with flake8 and execute unit tests with pytest on every push to the main branch, ensuring automated testing and clean code practices.
 
 ---
 
