@@ -1,15 +1,21 @@
+import sys
+import os
+
+# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
+
 import pytest
 import pandas as pd
 import joblib
 from sklearn.utils.validation import check_is_fitted
 import numpy as np
-from src.config import NUMERICAL_COLS, CATEGORICAL_COLS, TARGET_COL
-from src.pipeline import build_pipeline
-import os
-import sys
-
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+try:
+    from src.config import NUMERICAL_COLS, CATEGORICAL_COLS, TARGET_COL
+    from src.pipeline import build_pipeline
+except ImportError as e:
+    print(f"Import error: {e}")
+    raise
 
 @pytest.fixture
 def sample_data():
