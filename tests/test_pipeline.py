@@ -1,8 +1,6 @@
 import sys
 import os
 
-# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
-
 import pytest
 import pandas as pd
 import joblib
@@ -16,6 +14,7 @@ try:
 except ImportError as e:
     print(f"Import error: {e}")
     raise
+
 
 @pytest.fixture
 def sample_data():
