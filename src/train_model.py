@@ -15,7 +15,7 @@ np.random.seed(42)
 def load_and_prepare_data():
     """Load and prepare the dataset for modeling"""
     # Load processed data with target variable
-    df = pd.read_csv('../data/processed/data_processed.csv')
+    df = pd.read_csv('../data/processed/processed_df_with_target.csv')
     
     # Select only the engineered numeric features (from Task 3-4)
     feature_columns = [
@@ -115,7 +115,7 @@ def main():
     # Define models and parameters
     models = {
         'LogisticRegression': {
-            'model': LogisticRegression(random_state=42),
+            'model': LogisticRegression(random_state=42, max_iter=1000),
             'params': {
                 'C': [0.001, 0.01, 0.1, 1, 10, 100],
                 'penalty': ['l1', 'l2'],
