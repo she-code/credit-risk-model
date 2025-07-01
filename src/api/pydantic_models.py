@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class PredictionRequest(BaseModel):
     num__Amount: float
     num__Value: float
@@ -19,6 +20,7 @@ class PredictionRequest(BaseModel):
     num__TransactionMonth: float
     num__TransactionYear: float
     num__IsWeekend: float
+
 
 class PredictionResponse(BaseModel):
     risk_probability: float
