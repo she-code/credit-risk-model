@@ -88,6 +88,7 @@ Engineered a proxy target variable is_high_risk using RFM-based customer segment
 
 ### ✅ Task 5 - Model Training and Tracking
 Built a structured model training pipeline using MLflow for experiment tracking and model versioning. Split the processed dataset with the is_high_risk target into stratified train/test sets and scaled features using StandardScaler. Trained Logistic Regression, Random Forest, and Gradient Boosting models with hyperparameter tuning via GridSearchCV. Evaluated models using Accuracy, Precision, Recall, F1 Score, and ROC-AUC. Logged parameters, metrics, and models to MLflow and registered the best-performing model in the MLflow Model Registry for future use.
+
 ---
 
 ## ⚙️ Setup Instructions
