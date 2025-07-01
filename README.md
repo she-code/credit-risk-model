@@ -33,6 +33,7 @@ credit-risk-model/
 ├── notebooks/
   │ └── 1.0_eda.ipynb # performs eda and statistics analysis on data
   │ └── 04_RFM_Target_Variable_Engineering.ipynb # rfm calculation
+  │ └── 05_model_training.py # model training and tracking
 │ └── README.md # Documentation for notebooks
 ├── scripts/
 │ └── README.md # Documentation for scripts
@@ -44,8 +45,11 @@ credit-risk-model/
 │ └── preprocessing.py # data preprocessing
 │ └── pipeline.py # pipeline for feature engineering and preprocessing
 │ └── run_pipeline.py # runs the pipeline and saves the output
+│ └── train_model.py # model training and tracking
 │ └── README.md # Documentation for source code
 ├── tests/
+│ └── test_piepline.py # Tests pipline functions
+│ └── test_model_training.py # Tests model training functions
 │ └── README.md # Testing documentation
 ├── .gitattributes
 ├── .gitignore
@@ -82,6 +86,8 @@ Built a reproducible data pipeline using sklearn.pipeline.Pipeline. Created aggr
 ### ✅ Task 4 - Proxy Target Variable Engineering
 Engineered a proxy target variable is_high_risk using RFM-based customer segmentation. Calculated Recency, Frequency, and Monetary metrics per customer, scaled features, and applied K-Means clustering to identify disengaged customers. Labeled the least engaged cluster as high-risk (1) and others as low-risk (0). Integrated the binary target into the processed dataset for downstream modeling.
 
+### ✅ Task 5 - Model Training and Tracking
+Built a structured model training pipeline using MLflow for experiment tracking and model versioning. Split the processed dataset with the is_high_risk target into stratified train/test sets and scaled features using StandardScaler. Trained Logistic Regression, Random Forest, and Gradient Boosting models with hyperparameter tuning via GridSearchCV. Evaluated models using Accuracy, Precision, Recall, F1 Score, and ROC-AUC. Logged parameters, metrics, and models to MLflow and registered the best-performing model in the MLflow Model Registry for future use.
 ---
 
 ## ⚙️ Setup Instructions

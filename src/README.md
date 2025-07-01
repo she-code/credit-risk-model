@@ -62,3 +62,18 @@ Exported pipeline artifact for inference
 
 Verified successful execution with output paths:
 
+### train_model.py
+
+Loaded processed dataset with engineered features and proxy target is_high_risk.
+
+Split data into train/test sets using stratified sampling to preserve class distribution.
+
+Scaled numerical features using StandardScaler.
+
+Trained and evaluated three models: Logistic Regression, Random Forest, and Gradient Boosting.
+
+Applied GridSearchCV for hyperparameter tuning using ROC-AUC as the scoring metric.
+
+Logged model parameters, metrics (Accuracy, Precision, Recall, F1, ROC-AUC), and artifacts using MLflow.
+
+Registered the best-performing model in the MLflow Model Registry for future deployment.
